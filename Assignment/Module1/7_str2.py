@@ -1,0 +1,2 @@
+mystr = "Hello"
+print(mystr)
