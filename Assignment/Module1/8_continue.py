@@ -3,7 +3,7 @@
 
 list1 = ['apple','banana','mango']
 
-for fruits in list1:
-    if fruits == 'banana':
+for i in list1:
+    if i == 'banana':
         continue
-    print(fruits)
+    print(i)
