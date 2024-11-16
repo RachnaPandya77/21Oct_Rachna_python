@@ -6,3 +6,4 @@ print(mytuple)
 print(mytuple[-1])
 print(mytuple[-2])
 print(mytuple[-3])
+
