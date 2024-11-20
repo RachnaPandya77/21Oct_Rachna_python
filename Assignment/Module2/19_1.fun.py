@@ -39,7 +39,7 @@ elif choice == 4:
     div()
 
 else:
-    print("enter valid choice")
+    print("Enter valid choice")
     
 
 
