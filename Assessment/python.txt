@@ -1,1 +1,16 @@
-demo file
+Key Features:
+Two Separate Files:==
+
+main.py handles the overall structure and navigation of the program.
+bms.py contains all business logic related to customers and transactions.
+
+
+In-Memory Storage:==
+
+Customer data is stored in the customers dictionary, which is shared between the modules.
+
+
+Simple Implementation:==
+
+No file handling or complex modules, just basic Python concepts.
+
