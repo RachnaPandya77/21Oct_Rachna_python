@@ -5,7 +5,7 @@ def display_menu():
     print("1. Banker Menu")
     print("2. Customer Menu")
     print("3. Exit")
-    return input("Select an option: ")
+    return input("Select option: ")
 
 while True:
     choice = display_menu()
@@ -14,7 +14,7 @@ while True:
     elif choice == '2':
         bms.customer_menu()
     elif choice == '3':
-        print("Thank you for using the Bank Management System.")
+        print("Thank you for using Bank Management System")
         break
     else:
-        print("Invalid option. Please try again.")
+        print("Invalid option, Please try again")

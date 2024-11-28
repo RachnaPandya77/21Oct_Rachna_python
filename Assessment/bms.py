@@ -1,17 +1,17 @@
-customers = {}  # Dictionary to store customer data
+customers = {}  
 
-# Function to add a new customer
+# add customer
 def add_customer():
     customer_id = input("Enter Customer ID: ")
     if customer_id in customers:
         print("Customer already exists.")
     else:
         name = input("Enter Customer Name: ")
-        balance = float(input("Enter Initial Balance: "))
+        balance = float(input("Enter Amount: "))
         customers[customer_id] = {'name': name, 'balance': balance}
         print("Customer added successfully.")
 
-# Function to view a specific customer
+# view customer info
 def view_customer():
     customer_id = input("Enter Customer ID: ")
     if customer_id in customers:
@@ -19,20 +19,20 @@ def view_customer():
     else:
         print("Customer not found.")
 
-# Function to view all customers
+# view all customer
 def view_all_customers():
     if not customers:
-        print("No customers found.")
+        print("No customer found.")
     else:
         for customer_id, details in customers.items():
             print(f"ID: {customer_id}, Name: {details['name']}, Balance: {details['balance']}")
 
-# Function to calculate total balance in the bank
+# calculatr balance
 def total_bank_balance():
     total = sum(details['balance'] for details in customers.values())
     print(f"Total Balance in Bank: {total}")
 
-# Banker Menu
+# banker
 def banker_menu():
     while True:
         print("\n--- Banker Menu ---")
@@ -56,7 +56,7 @@ def banker_menu():
         else:
             print("Invalid option. Please try again.")
 
-# Function to deposit money
+# Function deposit money
 def deposit_money():
     customer_id = input("Enter Customer ID: ")
     if customer_id in customers:
@@ -64,22 +64,22 @@ def deposit_money():
         customers[customer_id]['balance'] += amount
         print("Amount deposited successfully.")
     else:
-        print("Customer not found.")
+        print("Customer not found.") 
 
-# Function to withdraw money
+# Function withdraw money
 def withdraw_money():
     customer_id = input("Enter Customer ID: ")
     if customer_id in customers:
         amount = float(input("Enter Withdrawal Amount: "))
         if customers[customer_id]['balance'] >= amount:
             customers[customer_id]['balance'] -= amount
-            print("Amount withdrawn successfully.")
+            print("Amount withdraw successfully.")
         else:
             print("Insufficient balance.")
     else:
-        print("Customer not found.")
+        print("Custumer not found")
 
-# Customer Menu
+# Customer
 def customer_menu():
     while True:
         print("\n--- Customer Menu ---")
