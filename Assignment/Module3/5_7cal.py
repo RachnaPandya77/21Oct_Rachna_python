@@ -1,7 +1,6 @@
 # Write a Python program to handle exceptions in a calculator
 
-
-try:
+"""try:
 
     a = int(input("Enter first number: "))
     b = int(input("Enter second number: "))
@@ -22,10 +21,8 @@ try:
     else:
         print("Invalid op")
 
-        
-
 except Exception as ex:
-    print(ex)
+    print(ex)"""
 
     
 
