@@ -8,5 +8,16 @@
 <body style="background-color: aquamarine;">
     <h1 style="text-align: center;">Welcome to Doctor Finder</h1>
     <hr>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Name"><br><br>
+        <input type="text" name="specialization" placeholder="specialization"><br><br>
+        <input type="number" name="experience" placeholder="experience"><br><br>
+        <textarea name="address" placeholder="address" ></textarea><br><br>
+        <input type="number" name="mobile" placeholder="mobile"><br><br>
+        
+        <input type="submit" value="submit">
+        
+    </form>
 </body>
 </html>
